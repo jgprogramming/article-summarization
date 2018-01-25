@@ -19,6 +19,6 @@ m.load(model_file)
 d = open(inputFile)
 j = json.loads(d.read())
 
-print(j["title"])
+print(j[0]["title"])
 
-print(m.summarise_text(j["text"], j["title"]))
+print(m.summarise_text(j[0]["text"], j[0]["title"]))
