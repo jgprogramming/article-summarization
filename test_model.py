@@ -5,7 +5,7 @@ import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument("test_dir", help="Path to test dir")
-parser.add_argument("--model_dir", default="./", help="Path to output directory for model")
+parser.add_argument("--model_dir", default="./models/", help="Path to output directory for model")
 parser.add_argument("--model_file", default="model.pkl", help="Filename for model")
 args = parser.parse_args()
 
